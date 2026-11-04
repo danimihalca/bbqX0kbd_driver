@@ -524,7 +524,7 @@ static irqreturn_t bbqX0kbd_irq_handler(int irq, void *dev_id)
 
 
 
-static int bbqX0kbd_probe(struct i2c_client *client, const struct i2c_device_id *id)
+static int bbqX0kbd_probe(struct i2c_client *client)
 {
 	struct device *dev = &client->dev;
 	struct bbqX0kbd_data *bbqX0kbd_data;
